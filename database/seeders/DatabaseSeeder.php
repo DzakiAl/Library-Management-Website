@@ -175,7 +175,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Diluc Ragnvindr',
             'email' => 'ragnvindr@example.com',
             'address' => 'Diluc Ragnvindr Apt 10, 1257 Avenue Street San Francisco California USA',
-            'phone' => '111222333'
+            'phone' => '333222111'
         ]);
 
         Member::factory()->create([
@@ -196,7 +196,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Kafka',
             'email' => 'kafka@example.com',
             'address' => 'Kafka 1045 Winter Street San Francisco California USA',
-            'phone' => '656808000'
+            'phone' => '656777808'
         ]);
 
         Member::factory()->create([
