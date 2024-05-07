@@ -9,10 +9,28 @@
             @csrf
             @method('PUT')
             <input type="text" placeholder="Title" name="title" class="input" value="{{ $book->title }}"><br>
-            <input type="text" placeholder="Author" name="author" class="input" value="{{ $book->author }}"><br>
-            <input type="text" placeholder="Publisher" name="publisher" class="input" value="{{ $book->publisher }}"><br>
+            <select name="author" class="input">
+                @foreach ($authors as $author)
+                    <option value="{{ $author->name }}"
+                        {{ $book->author == $author->name ? 'selected' : '' }}>{{ $author->name }}
+                    </option>
+                @endforeach
+            </select><br>
+            <select name="publisher" class="input">
+                @foreach ($publishers as $publisher)
+                    <option value="{{ $publisher->name }}"
+                        {{ $book->publisher == $publisher->name ? 'selected' : '' }}>{{ $publisher->name }}
+                    </option>
+                @endforeach
+            </select><br>
             <input type="date" placeholder="Release Date" name="publication_date" class="input" value="{{ $book->publication_date}}"><br>
-            <input type="text" placeholder="Genre" name="genre" class="input" value="{{ $book->genre }}"><br>
+            <select name="genre" class="input">
+                @foreach ($genres as $genre)
+                    <option value="{{ $genre->genre }}"
+                        {{ $book->genre == $genre->genre ? 'selected' : '' }}>{{ $genre->genre }}
+                    </option>
+                @endforeach
+            </select><br>
             <input type="number" placeholder="Number of Copies" name="number_of_copies" class="input" value="{{ $book->number_of_copies }}"><br>
             <div class="option">
                 <a href="{{ route('book.index') }}" class="button-cancel">Cancel</a>

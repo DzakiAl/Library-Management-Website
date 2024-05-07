@@ -62,7 +62,10 @@ class BookController extends Controller
      */
     public function edit(Book $book)
     {
-        return view('book.edit', ['book' => $book]);
+        $authors = Author::all();
+        $publishers = Publisher::all();
+        $genres = Genre::all();
+        return view('book.edit', ['book' => $book, 'authors' => $authors, 'genres' => $genres, 'publishers' => $publishers]);
     }
 
     /**
