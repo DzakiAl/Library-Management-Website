@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Book;
+use App\Models\Author;
+use App\Models\Publisher;
+use App\Models\Genre;
 use Illuminate\Http\Request;
 
 class BookController extends Controller
@@ -21,7 +24,11 @@ class BookController extends Controller
      */
     public function create()
     {
-        return view ('book.create');
+        $authors = Author::all();
+        $publishers = Publisher::all();
+        $genres = Genre::all();
+        
+        return view ('book.create', compact('authors', 'publishers', 'genres'));
     }
 
     /**
