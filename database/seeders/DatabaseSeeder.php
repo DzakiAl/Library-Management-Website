@@ -61,7 +61,7 @@ class DatabaseSeeder extends Seeder
         Book::factory()->create([
             'title' => 'Do Android Dreams of Electric Sheep?',
             'author' => 'Philip K. Dick',
-            'publisher' => 'Eternal Books Inc.',
+            'publisher' => 'Star Eclipse Book Inc.',
             'publication_date' => '2020-01-01',
             'genre' => 'Sci-Fi',
             'number_of_copies' => 10
@@ -70,7 +70,7 @@ class DatabaseSeeder extends Seeder
         Book::factory()->create([
             'title' => 'Jujutsu Kaisen Vol.1 EN Ver',
             'author' => 'Gege Akutami',
-            'publisher' => 'Eternal Books Inc.',
+            'publisher' => 'Star Eclipse Book Inc.',
             'publication_date' => '2022-05-25',
             'genre' => 'Action',
             'number_of_copies' => 10
@@ -79,7 +79,7 @@ class DatabaseSeeder extends Seeder
         Book::factory()->create([
             'title' => 'Jujutsu Kaisen Vol.2 EN Ver',
             'author' => 'Gege Akutami',
-            'publisher' => 'Eternal Books Inc.',
+            'publisher' => 'Star Eclipse Book Inc.',
             'publication_date' => '2022-05-25',
             'genre' => 'Action',
             'number_of_copies' => 10
@@ -88,7 +88,7 @@ class DatabaseSeeder extends Seeder
         Book::factory()->create([
             'title' => 'Spy x Family Vol.1 EN Ver',
             'author' => 'Tatsuya Endo',
-            'publisher' => 'Eternal Books Inc.',
+            'publisher' => 'Star Eclipse Book Inc.',
             'publication_date' => '2021-01-01',
             'genre' => 'Comedy',
             'number_of_copies' => 10
@@ -97,7 +97,7 @@ class DatabaseSeeder extends Seeder
         Book::factory()->create([
             'title' => 'Spy x Family Vol.2 EN Ver',
             'author' => 'Tatsuya Endo',
-            'publisher' => 'Eternal Books Inc.',
+            'publisher' => 'Star Eclipse Book Inc.',
             'publication_date' => '2021-01-01',
             'genre' => 'Comedy',
             'number_of_copies' => 10
@@ -106,7 +106,7 @@ class DatabaseSeeder extends Seeder
         Book::factory()->create([
             'title' => 'Mashle Vol.1 EN Ver',
             'author' => 'Hajime Komoto',
-            'publisher' => 'Eternal Books Inc.',
+            'publisher' => 'Star Eclipse Book Inc.',
             'publication_date' => '2023-07-07',
             'genre' => 'Action',
             'number_of_copies' => 10
@@ -115,7 +115,7 @@ class DatabaseSeeder extends Seeder
         Book::factory()->create([
             'title' => 'Mashle Vol.2 EN Ver',
             'author' => 'Hajime Komoto',
-            'publisher' => 'Eternal Books Inc.',
+            'publisher' => 'Star Eclipse Book Inc.',
             'publication_date' => '2023-07-07',
             'genre' => 'Action',
             'number_of_copies' => 10
@@ -124,7 +124,7 @@ class DatabaseSeeder extends Seeder
         Book::factory()->create([
             'title' => 'Is Technology Dangerous?',
             'author' => 'Dzaki Al',
-            'publisher' => 'Eternal Books Inc.',
+            'publisher' => 'Star Eclipse Book Inc.',
             'publication_date' => '2024-01-01',
             'genre' => 'Technology',
             'number_of_copies' => 10
@@ -133,7 +133,7 @@ class DatabaseSeeder extends Seeder
         Book::factory()->create([
             'title' => 'Can AI Take Over World?',
             'author' => 'Dzaki Al',
-            'publisher' => 'Eternal Books Inc.',
+            'publisher' => 'Star Eclipse Book Inc.',
             'publication_date' => '2024-03-01',
             'genre' => 'Technology',
             'number_of_copies' => 10
@@ -142,7 +142,7 @@ class DatabaseSeeder extends Seeder
         Book::factory()->create([
             'title' => 'Casino Royale',
             'author' => 'Ian Fleming',
-            'publisher' => 'Eternal Books Inc.',
+            'publisher' => 'Star Eclipse Book Inc.',
             'publication_date' => '2020-03-01',
             'genre' => 'Action',
             'number_of_copies' => 10
@@ -207,9 +207,9 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Publisher::factory()->create([
-            'name' => 'Eternal Books Inc.',
-            'address' => 'Eternal Books Inc. Cold Steet New York USA',
-            'email' => 'eternalbooks@eternal.com'
+            'name' => 'Star Eclipse Book Inc.',
+            'address' => 'Star Eclipse Book Inc. Cold Steet New York USA',
+            'email' => 'stareclipsebook@stareclipse.com'
         ]);
     }
 }
